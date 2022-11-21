@@ -1,0 +1,49 @@
+/* Define font file and location */
+@font-face {
+  font-family: "northBoldFont";
+  src: url("/Norse-Bold.otf");
+}
+
+/* Take out blank space around the page */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sides {
+  display: flex;
+}
+
+.container1 {
+  /* Adding and Styling background image of left side   */
+  background-image: url("/halie-west.jpg"); /*Set the image of the right side of page */
+  background-size: cover; /* It preserves the original aspect ratio but resizes the image to cover the entire container, even if it has to upscale the image or crop it. */
+  min-width: 40vw; /*Set the minimum width*/
+
+  height: 100vh;
+  display: flex;
+}
+
+.container1 .cont1Inside {
+  /* selector for the div with the logo */
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 40%;
+  padding: 1rem 3rem 1rem 3rem;
+  align-content: center;
+  justify-content: center;
+}
+
+img {
+  width: 5.5rem;
+  height: auto;
+}
+
+.logoText {
+  font-family: northBoldFont, Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  color: white;
+  margin-top: 0.8rem;
+}
