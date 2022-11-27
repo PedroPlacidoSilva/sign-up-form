@@ -97,4 +97,25 @@ label {
   color: rgb(68, 66, 66);
 }
 
-button
+button {
+  background-color: #596d48;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  margin: 1.5rem 0rem 0rem 2rem;
+  border: none transparent;
+  box-shadow: 0.08rem 0.08rem 1rem #888888;
+}
+
+.loginText {
+  padding: 2rem 2rem 0rem 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.loginLink {
+  color: #596d48;
+}
