@@ -19,7 +19,6 @@ body {
   background-image: url("/halie-west.jpg"); /*Set the image of the right side of page */
   background-size: cover; /* It preserves the original aspect ratio but resizes the image to cover the entire container, even if it has to upscale the image or crop it. */
   min-width: 40vw; /*Set the minimum width*/
-
   height: 100vh;
   display: flex;
 }
@@ -94,7 +93,16 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.6rem;
   font-weight: 600;
-  color: rgb(68, 66, 66);
+}
+
+input {
+  border: 1.5px solid #e5e7eb;
+}
+
+input:focus {
+  outline: none; /*Take out the default outline black of the browser */
+  border: 1.5px solid rgb(18, 88, 239);
+  box-shadow: 0.02rem 0.02rem 0.7rem #888888;
 }
 
 button {
