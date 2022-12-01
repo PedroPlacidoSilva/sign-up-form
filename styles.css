@@ -1,7 +1,7 @@
 /* Define font file and location */
 @font-face {
   font-family: "northBoldFont";
-  src: url("/Norse-Bold.otf");
+  src: url("./Norse-Bold.otf");
 }
 
 /* Take out blank space around the page */
@@ -16,7 +16,7 @@ body {
 
 .container1 {
   /* Adding and Styling background image of left side   */
-  background-image: url("/halie-west.jpg"); /*Set the image of the right side of page */
+  background-image: url("./halie-west.jpg"); /*Set the image of the right side of page */
   background-size: cover; /* It preserves the original aspect ratio but resizes the image to cover the entire container, even if it has to upscale the image or crop it. */
   min-width: 40vw; /*Set the minimum width*/
   height: 100vh;
