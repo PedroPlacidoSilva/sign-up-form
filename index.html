@@ -31,35 +31,76 @@
           </div>
           <div class="headertext3">Let's do this!</div>
         </div>
-        <form action="#" method="post">
+        <form action="?" method="post">
+          <!-- The "?" sends the data to the same page  -->
           <div class="name">
             <div class="inputs">
               <label for="first_name">FIRST NAME</label>
-              <input type="text" id="first_name" />
+              <input
+                type="text"
+                id="first_name"
+                pattern="[a-zA-Z]+"
+                required
+                oninvalid="this.setCustomValidity('The first name only accepts letters')"
+                oninput="this.setCustomValidity('')"
+              />
             </div>
             <div class="inputs">
               <label for="last_name">LAST NAME</label>
-              <input type="text" id="last_name" />
+              <input
+                type="text"
+                id="last_name"
+                pattern="[a-zA-Z]+"
+                required
+                oninvalid="this.setCustomValidity('The last name only accepts letters')"
+                oninput="this.setCustomValidity('')"
+              />
             </div>
           </div>
           <div class="identification">
             <div class="inputs">
               <label for="email">EMAIL</label>
-              <input type="email" id="email" placeholder="you@example.com" />
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
             </div>
             <div class="inputs">
               <label for="phone">PHONE NUMBER</label>
-              <input type="text" id="phone" />
+              <input
+                type="text"
+                id="phone"
+                placeholder="+Your number"
+                maxlength="14"
+                pattern="[\+][0-9]+"
+                required
+                oninvalid="this.setCustomValidity('Accepts plus sign followed by numbers')"
+                oninput="this.setCustomValidity('')"
+              />
             </div>
           </div>
           <div class="pass">
             <div class="inputs">
               <label for="password">PASSWORD</label>
-              <input class="error" type="password" id="password" />
+              <input
+                class="error"
+                type="password"
+                id="password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+              />
             </div>
             <div class="inputs">
               <label for="cpassword">CONFIRM PASSWORD</label>
-              <input class="error" type="password" id="cpassword" />
+              <input
+                class="error"
+                type="password"
+                id="cpassword"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                required
+              />
             </div>
           </div>
           <div class="submitButton">
@@ -68,7 +109,7 @@
         </form>
         <div class="loginText">
           Already have an account?<a
-            href="#"
+            href="?"
             target="_blanck"
             class="loginLink"
           >

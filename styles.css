@@ -101,7 +101,7 @@ input {
 
 input:focus {
   outline: none; /*Take out the default outline black of the browser */
-  border: 1.5px solid rgb(18, 88, 239);
+  border: 1.5px solid rgb(146, 175, 237);
   box-shadow: 0.02rem 0.02rem 0.7rem #888888;
 }
 
@@ -115,6 +115,11 @@ button {
   margin: 1.5rem 0rem 0rem 2rem;
   border: none transparent;
   box-shadow: 0.08rem 0.08rem 1rem #888888;
+}
+
+button:hover {
+  color: #596d48;
+  background-color: rgb(209, 245, 209);
 }
 
 .loginText {
